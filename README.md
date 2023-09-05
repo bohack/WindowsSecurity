@@ -8,16 +8,19 @@ The following script are to be used with GPO and deployed as a startup script.
 
 **TurnOffSMBv1.ps1** - This script will disable the SMB v1 protocol.
 
- GPO
+ **GPO**
  
  Disable LLMNR
+ 
     Computer Configuration > Administrative Templates > Network > DNS Client > Turn Off Multicast Name Resolution (Enable)
 
- Regedit
+ **Regedit**
  
   Disable WPAD
+ 
     HKLM\SYSTEM\CurrentControlSet\Services\WinHttpAutoProxySvc\Start -> 4
     HKLM\SYSTEM\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp\DisableWpad -> 1
 
   Disable mDNS
+  
     HKLM\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\EnableMDNS -> 0
