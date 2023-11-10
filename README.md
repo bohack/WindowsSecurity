@@ -21,6 +21,6 @@ The following script are to be used with GPO and deployed as a startup script.
     HKLM\SYSTEM\CurrentControlSet\Services\WinHttpAutoProxySvc\Start -> 4
     HKLM\SYSTEM\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp\DisableWpad -> 1
 
-  Disable mDNS
+  Disable mDNS (Credit to https://f20.be/blog/mdns)
   
     HKLM\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters\EnableMDNS -> 0
